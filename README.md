@@ -8,4 +8,4 @@ Detta är projektuppgiften i Kursen Webbdesign för CMS på Mittuniversitetet.
 
 [Länk till projektet](https://studenter.miun.se/~jeej2100/writeable/BDGK/)
 
-Av: Jessica Ejelöv
+Av: Jessica Ejelöv, jessicaejelov@gmail.com
