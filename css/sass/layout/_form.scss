@@ -1,0 +1,95 @@
+// form styling (contact form 7 plugin wordpress)
+.wpcf7-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: $primary-green-color;
+    margin: 0 auto;
+    padding: $base-padding;
+    label,
+    p {
+        color: $primary-background;
+        font-size: 1em;
+        padding: .5em;
+    }
+    input,
+    textarea,
+    select {
+        padding: .5em;
+        display: block;
+        width: 100%;
+    }
+    input[type=checkbox] {
+        height: 2em;
+        width: 2em;
+    }
+}
+
+.wpcf7-response-output {
+    background-color: red;
+    color: $primary-background;
+    border-color: $primary-green-color;
+}
+
+// booking form styling
+#abc-form-wrapper {
+    background-color: $primary-accent;
+    color: $primary-background;
+    font-size: 1em;
+    .abc-column {
+        width: 50%;
+    }
+    label {
+        color: $primary-background;
+        font-size: 1em;
+        padding: .5em;
+    }
+    input,
+    textarea {
+        padding: .5em;
+        padding-left: 2em;
+        display: block;
+        width: 100%;
+    }
+    input[type=checkbox] {
+        width: auto;
+    }
+    .abc-input-fa {
+        color: $primary-accent;
+    }
+    .abc-submit {
+        width: 100%;
+        display: block;
+        background-color: $primary-background;
+        color: $primary-accent;
+        font-family: $heading-family;
+        font-size: 1em;
+        border: $primary-text 1px solid;
+        border-radius: 10px;
+        padding: .5em 2em;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 8px;
+        &:hover {
+            color: $primary-text;
+            background-color: $primary-background;
+        }
+    }
+}
+
+#abc-bookingresults {
+    span {
+        line-height: 1.5em;
+    }
+    .abc-fullcolumn {
+        line-height: 1.5em;
+    }
+}
+
+// media querys
+@media (max-width: 1000px) {
+    .wpcf7-form {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 1em .5em;
+        margin: 0 auto;
+        width: 100%;
+    }
+}

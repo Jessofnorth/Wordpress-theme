@@ -1,0 +1,27 @@
+/*
+Theme Name: BDGK
+Author: Jessica Ejelöv, jeej2100@studenter.miun.se
+Text Domain: bdgk
+Theme URI: https://studenter.miun.se/~jeej2100/writeable/BDGK/
+Author URI: https://studenter.miun.se/~jeej2100/writeable/BDGK/
+Description: A custom theme for Björkudden Discgolf Klubb
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: discgolf, camping
+Requires PHP: 7.4
+Tested up to: 5.9.3
+*/
+
+// imports
+@import 'sass/abstracts/variables';
+@import 'sass/abstracts/mixins';
+@import 'sass/abstracts/button';
+@import 'sass/base/reset';
+@import 'sass/base/base';
+@import 'sass/base/text';
+@import 'sass/base/links';
+@import 'sass/layout/layout';
+@import 'sass/layout/header';
+@import 'sass/layout/footer';
+@import 'sass/layout/sidebar';
+@import 'sass/layout/form';

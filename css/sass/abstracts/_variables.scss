@@ -1,0 +1,56 @@
+// colors
+$primary-background: #fff;
+$primary-green-color: #485B4A;
+$primary-darkgreen-color: #2B5033;
+$primary-accent: #265D7D;
+$primary-text: #000;
+// custom palette for editor
+.has-blue-color {
+    color: $primary-accent;
+}
+
+.has-blue-background-color {
+    background-color: $primary-accent;
+}
+
+.has-darkgreen-color {
+    color: $primary-darkgreen-color;
+}
+
+.has-darkgreen-background-color {
+    background-color: $primary-darkgreen-color;
+}
+
+.has-lightgreen-color {
+    color: $primary-green-color;
+}
+
+.has-lightgreen-background-color {
+    background-color: $primary-green-color;
+}
+
+.has-black-color {
+    color: $primary-text;
+}
+
+.has-black-background-color {
+    background-color: $primary-text;
+}
+
+.has-white-color {
+    color: $primary-background;
+}
+
+.has-white-background-color {
+    background-color: $primary-background;
+}
+
+// text size and font
+$base-text-size: 20px;
+$base-text-family: 'Verdana',
+sans-serif;
+$heading-family: 'Inria Sans',
+sans-serif;
+// padding margin 
+$base-margin: 1em .5em;
+$base-padding: 1em .5em;

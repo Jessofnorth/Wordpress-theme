@@ -1,0 +1,47 @@
+// sidebar on news and event pages.
+.sidebar-wrapper {
+    background-color: $primary-green-color;
+    padding: 1em .5em;
+    text-align: center;
+    width: 100%;
+    nav {
+        padding-bottom: 5em;
+        width: 100%;
+        ul {
+            padding: $base-padding;
+            list-style-type: none;
+            a {
+                color: $primary-background;
+                font-weight: 100;
+                line-height: 1.5em;
+                &:hover {
+                    color: $primary-text;
+                }
+            }
+        }
+    }
+    h2 {
+        color: $primary-background;
+    }
+}
+
+// media querys 
+@media (max-width: 1000px) {
+    .sidebar-wrapper {
+        margin-bottom: 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+        width: 100%;
+        nav {
+            padding-bottom: 0;
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .sidebar-wrapper {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}

@@ -1,0 +1,200 @@
+// desktop nav
+.desktop {
+    position: relative;
+    background-color: $primary-green-color;
+    height: 7em;
+    padding: .5em 0;
+    .nav-grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 120px 1fr;
+        justify-content: center;
+        align-content: end;
+        .current-menu-item a {
+            color: $primary-background;
+            text-decoration: underline;
+        }
+        div {
+            place-self: end center;
+            width: 100%;
+        }
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+            list-style-type: none;
+            li {
+                place-self: center center;
+                padding: 1em;
+                position: relative;
+            }
+        }
+        a {
+            color: $primary-background;
+            font-size: .75em;
+            text-decoration: none;
+            img {
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                place-self: center;
+            }
+            &:hover {
+                color: $primary-background;
+                text-decoration: underline;
+            }
+        }
+        // add arrow if there is a sub menu and show sub menu on hover
+        .sub-menu {
+            display: none;
+            position: absolute;
+            z-index: 99;
+            top: 100%;
+            left: -25%;
+            background-color: $primary-green-color;
+            width: 150%;
+            text-align: center;
+            list-style-type: none;
+        }
+        .menu-item-has-children {
+            position: relative;
+            background-image: url(../img/expand.png);
+            background-size: .75em auto;
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+        .menu-item-has-children:hover .sub-menu {
+            display: block;
+        }
+    }
+    .hamburger {
+        display: none;
+    }
+    .mobile-nav {
+        display: none;
+    }
+    // mobile/tablet menu
+    @media (max-width: 1000px) {
+        .nav-grid {
+            .menu-huvudmeny-vanster-container,
+            .menu-huvudmeny-hoger-container {
+                display: none;
+            }
+        }
+        .hamburger {
+            position: relative;
+            display: block;
+            width: 33px;
+            height: 100%;
+            appearance: none;
+            border: none;
+            outline: none;
+            background: none;
+            place-self: start;
+            padding: 0;
+            margin-left: 2em;
+        }
+        .hamburger .bar,
+        .hamburger::after,
+        .hamburger::before {
+            width: 100%;
+            content: "";
+            display: block;
+            height: 4px;
+            background-color: $primary-background;
+            margin: 3px 0px;
+            transition: 0.4s;
+            border-radius: 99px;
+        }
+        /* animation of hamburger, rotate 2 bars and hide one */
+        .hamburger.is-active::before {
+            transform: rotate(-45deg) translate(-2px, 6px);
+        }
+        .hamburger.is-active::after {
+            transform: rotate(45deg) translate(-3px, -8px);
+        }
+        .hamburger.is-active .bar {
+            opacity: 0;
+        }
+        /* drop-down part of mobile-nav 
+is out of sight until hamburger is clicked
+placed under the navbar so hamburger is still clickable */
+        .mobile-nav {
+            position: relative;
+            top: 0;
+            right: 100%;
+            width: auto;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            justify-items: center;
+            z-index: 99;
+            background-color: $primary-green-color;
+            transition: 0.8s;
+            padding-left: 1em;
+            list-style-type: none;
+            .current-menu-item a {
+                color: $primary-background;
+                text-decoration: underline;
+            }
+            div {
+                height: 100%;
+                width: 100%;
+                display: block;
+                background-color: $primary-green-color;
+                padding: 1em;
+            }
+            ul {
+                display: block;
+                height: 100%;
+                width: 100%;
+                list-style-type: none;
+                color: $primary-background;
+                margin: 0 auto;
+                li {
+                    padding: $base-padding;
+                    position: relative;
+                }
+            }
+            a {
+                color: $primary-background;
+                font-size: 1em;
+                text-decoration: none;
+                &:hover {
+                    color: $primary-text;
+                    text-decoration: underline;
+                }
+            }
+            .sub-menu {
+                display: block;
+                list-style-type: none;
+                li {
+                    list-style-type: none;
+                    a {
+                        color: $primary-background;
+                        font-size: .75em;
+                        font-weight: 100;
+                        text-decoration: none;
+                        &:hover {
+                            color: $primary-text;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .menu-item-has-children {
+                position: relative;
+            }
+        }
+        .mobile-nav.is-active {
+            right: 0;
+        }
+    }
+}
+
+// custom header on front-page
+.custom-header {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+}

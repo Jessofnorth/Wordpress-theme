@@ -1,0 +1,70 @@
+// text styling
+h1 {
+    font-family: $heading-family;
+    font-size: 2.25em;
+    color: $primary-darkgreen-color;
+    text-align: center;
+    padding: $base-padding;
+}
+
+h2 {
+    font-family: $heading-family;
+    font-size: 2em;
+    color: $primary-darkgreen-color;
+    padding: $base-padding;
+}
+
+h3 {
+    font-family: $heading-family;
+    font-size: 1.75em;
+    color: $primary-darkgreen-color;
+}
+
+h4 {
+    font-family: $heading-family;
+    font-size: 1.5em;
+    color: $primary-darkgreen-color;
+}
+
+h5 {
+    font-family: $heading-family;
+    font-size: 1.25em;
+    color: $primary-darkgreen-color;
+}
+
+h6 {
+    font-family: $heading-family;
+    font-size: 1em;
+    color: $primary-darkgreen-color;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: $primary-text;
+    padding-bottom: 1em;
+}
+
+.has-text-align-center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+blockquote {
+    text-align: center;
+    font-style: italic;
+    color: $primary-accent;
+    padding: $base-padding;
+    p {
+        font-weight: 700;
+        color: $primary-accent;
+    }
+}
+
+ul {
+    list-style: inside;
+}
